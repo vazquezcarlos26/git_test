@@ -2,9 +2,9 @@
 *Bienvenido a la guia rapidad de git*
 
 # Crea un repositorio nuevo
-*Crea un directorio nuevo, ábrelo y ejecuta *
+Crea un directorio nuevo, ábrelo y ejecuta
 -git init  
-*para crear un nuevo repositorio de git. *
+para crear un nuevo repositorio de git.
 
 
 # Hacer checkout a un repositorio
