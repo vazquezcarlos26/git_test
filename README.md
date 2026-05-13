@@ -17,7 +17,7 @@ Si utilizas un servidor remoto, ejecuta.
 
 # Add & Commit
 Puedes registrar cambios (añadirlos al Index) usando:
-- git add <filename>, index.html
+- git add <filename> index.html
 - git add .
 
 Este es el primer paso en el flujo de trabajo básico. Para hacer commit a estos cambios usa:
@@ -50,3 +50,19 @@ y borra la rama
 
 Una rama nueva no estará disponible para los demás a menos que subas (push) la rama a tu repositorio remoto
 - git push origin <branch>
+
+# Actualiza & fusiona
+Para actualizar tu repositorio local al commit más nuevo, ejecuta
+- git pull
+
+en tu directorio de trabajo para bajar y fusionar los cambios remotos.
+Para fusionar otra rama a tu rama activa (por ejemplo master), utiliza
+- git merge <branch>
+
+en ambos casos git intentará fusionar automáticamente los cambios. Desafortunadamente, no siempre será posible y se podrán producir conflictos. 
+Tú eres responsable de fusionar esos conflictos manualmente al editar los archivos mostrados por git. Después de modificarlos, necesitas marcarlos como fusionados con
+- git add <filename> index.html
+- git add .
+
+Antes de fusionar los cambios, puedes revisarlos usando
+- git diff <source_branch> <target_branch>
